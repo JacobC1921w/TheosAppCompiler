@@ -30,7 +30,7 @@ git clone https://github.com/JacobC1921/TheosAppCompiler
 mv TheosAppCompiler/TAC.sh <ProjectDir>
 chmod <ProjectDIR>/TAC.sh
 cd <ProjectDir>
-./TAC.sh <IphoneIP>
+bash TAC.sh <IphoneIP>
 ```
 
 or, using the raw file:
@@ -38,7 +38,7 @@ or, using the raw file:
 cd <ProjectDIR>
 curl https://raw.githubusercontent.com/JacobC1921/TheosAppCompiler/main/TAC.sh -O TAC.sh
 chmod +x TAC.sh
-./TAC.sh <IphoneIP>
+bash TAC.sh <IphoneIP>
 ```
 
 ## Dependencies:
