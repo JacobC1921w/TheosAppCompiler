@@ -23,8 +23,6 @@ if [[ ${#} != 1 ]]; then
 	exit 1
 fi
 
-cat $(ls MCS/*.mcs | shuf -n 1) && echo
-
 echo -en "[\e[37;1m?\e[0m] Checking if host: '\e[93;1m${1}\e[0m' is online\r["
 netcat -z ${1} 22 &> /dev/null
 if [[ ${?} != 0 ]]; then
